@@ -1,0 +1,262 @@
+/* RALEWAY */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Black.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Italic.woff2') format('woff2'),
+        url('Raleway-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-LightItalic.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Thin.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-MediumItalic.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-ExtraLight.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Light.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-SemiBold.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/raleway/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* STARWARS */
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('../fonts/starjedi/StarJedi.woff2') format('woff2'),
+        url('../fonts/starjedi/StarJedi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* font selectors */
+
+h1{
+font-family: Star Jedi, Helvetica, sans-serif; 
+font-size: 450%; 
+text-align: center;
+color: #f9d71c; 
+margin: 0;
+}
+
+h2{
+    font-family: Raleway, Helvetica, sans-serif; 
+    font-style: italic;
+    font-size: 330%; 
+    font-weight: 600;
+    text-align: center;
+    color: #f9d71c; 
+    margin: 0;
+    }
+
+p{
+    font-family: Raleway, Helvetica, sans-serif; 
+    font-style: italic;
+    font-size: 120%; 
+    font-weight: 400;
+    text-align: center;
+    color: #f9d71c; 
+    margin: 0;
+    }  
+
+
+.pagewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.bgimage{
+    z-index: -1;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.zodiac_header{
+    margin-top: 2rem;
+    max-width: 90%;
+}
+
+.title_container{
+    margin-bottom: 1.5rem;
+}
+
+.title{
+    margin-bottom: 1.5rem;
+    
+}
+.subtitle{
+    margin-bottom: 1.2rem;
+}
+.buttons_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 3%;
+}
+.goodguys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.badguys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.button_container{
+   margin: 1rem;
+    width: 35%
+}
+
+.button_image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 700px) {
+    .buttons_container{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 5%;
+    }
+    .button_container{
+        margin: 1rem;
+         width: 30%
+     }
+    .goodguys{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 45%;
+    }
+    .badguys{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    h1{
+        font-size: 600%
+        
+    } 
+    .button_container{
+        margin: 1rem;
+         width: 25%
+     }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .bgimage {
+      left: 50%;
+      margin-left: -512px;   
+    }
+    
+  }
