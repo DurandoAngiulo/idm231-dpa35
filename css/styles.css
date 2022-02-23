@@ -263,6 +263,7 @@ p{
     justify-content: center;
     align-content: flex-start;
     background-color: rgba(0, 0, 0, 0.699);  
+    z-index: 50;
 }
 
 .sign_image{
