@@ -156,6 +156,7 @@ p{
     text-align: center;
     color: #f9d71c; 
     margin: 0;
+    line-height: 2.2rem;
     }  
 
 
@@ -207,6 +208,16 @@ p{
     border-radius: 7px;
     margin-bottom: 3rem;
 }
+.submitcontainer :hover{
+    cursor: pointer;
+}
+.divider{
+    background-color: #f9d71c;
+    width: 70%;
+    height: .5px;
+    margin-bottom: 1rem;
+}
+
 .buttons_container{
     display: flex;
     flex-wrap: wrap;
@@ -214,6 +225,7 @@ p{
     padding: 0 3%;
     margin-bottom: 2rem;
 }
+
 .goodguys{
     display: flex;
     flex-wrap: wrap;
@@ -229,15 +241,21 @@ p{
 .button_container{
    margin: 1rem;
    padding: 0;
-   box-shadow:2px -2px 4px 1px rgba(92, 86, 7, 0.7);
    border: none;
    background: none;
-    width: 35%;
+   width: 35%;
+   
+
+}
+.button_container :hover{
+cursor: pointer;
 }
 
 .button_image{
     width: 100%;
     height: auto;
+    border-radius: 5px;
+    box-shadow:2px -2px 4px 1px rgba(156, 147, 21, 0.7);
 }
 
 .popup_container{
@@ -250,7 +268,33 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* help popup bpx selectors */
+.popup_container_help{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.help_title{
+    font-family: Raleway, Helvetica, sans-serif; 
+    display:block;
+    width: 100%;
+    font-size: 200%;
+    margin-top: 25rem;
+}
+.help_description{
+    margin-top: 1rem;
+    display: block;
+    padding: 0 1.5rem;
+    line-height: 2rem; 
 }
 .popup-visible{
     width: 100%;
@@ -262,10 +306,23 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
-    background-color: rgba(0, 0, 0, 0.699);  
+    background-color: rgba(0, 0, 0, 0.85);  
     z-index: 50;
 }
 
+/* popup box selectors */
+.character_name{
+    font-family: Raleway, Helvetica, sans-serif; 
+    display:block;
+    width: 100%;
+    font-size: 200%;
+    margin: 1rem 0;
+}
+.description{
+    display: block;
+    padding: 0 1.5rem;
+    width: 100%;  
+}
 .sign_image{
     width:50%;
     border-radius: 10px;
@@ -274,18 +331,22 @@ p{
     margin-bottom: 1rem;
 }
 
-.description{
-    display: block;
-    padding: 0 1.5rem;
-    width: 100%;  
+/* help button selectors */
+.helpbutton_container{
+    width:100%;
 }
-.character_name{
-    font-family: Raleway, Helvetica, sans-serif; 
-    display:block;
-    width: 100%;
-    font-size: 200%;
-    margin: 1rem 0;
+.help_button{
+    background-color: transparent;
+    color:#f9d71c;
+    border: solid 1px #f9d71c;
+    border-radius: 7px;
+    margin-bottom: 1rem; 
+    width: 70px;
 }
+.helpbutton_container :hover{
+    cursor: pointer;
+}
+
 .xbutton{
     border: none;
     background: none;
@@ -294,7 +355,10 @@ p{
 .x{
     width:50%;
 }
-
+.disclaimer{
+    font-size: 75%;
+    margin-bottom: 3rem;
+}
 @media screen and (min-width: 700px) {
     .buttons_container{
         display: flex;
@@ -334,13 +398,17 @@ p{
      .sign_image{
         width:30%;
         margin-bottom: 2rem;
-        margin-top: 10rem;
+        margin-top: 15rem;
     }
     .description{
         padding: 0 8rem;
     }
     .x{
         width:40%;
+    }
+    
+    .help_description{
+        padding: 0 8rem;
     }
 }
 

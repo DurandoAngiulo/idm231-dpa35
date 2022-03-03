@@ -26,7 +26,25 @@
       src="images/x.png" alt="x button">
     </button>
   </div>
-
+  <div class="popup_container_help" id="popup_container_help">
+    <h2 class="help_title">
+      Help
+    </h2>
+    <p class="help_description">
+      Welcome to the help section. To use this <b>Star Wars</b>
+      horoscope site, simply enter your brithday to find out
+      which character most matches your astrological sign!
+      Or if you like, you can explore all the character types
+      by clicking on their corrresponding image!
+      Thanks for visiting and may the force be with you!
+    </p>
+    <div class="xbuttoncontainer">
+      <button class="xbutton" id="xbuttontwo">
+        <img class="x"
+        src="images/x.png" alt="x button">
+      </button>
+    </div>
+  </div>
   <div class= "pagewrapper" id="wrapper">
     <img class= "bgimage"
     src="images/swbg.jpg" alt= "test"
@@ -47,64 +65,72 @@
       </div>
       <div id="userInfo">
         <p><input id="bday" type="date"></p>
-        <p><button id="userSubmit" class="submit">Submit</button></p>
+        <p class="submitcontainer"><button id="userSubmit" class="submit">Submit</button></p>
       </div>
     </div>
     <div class= "buttons_container">
       <div class= "goodguys">
         <button  class= "button_container" id="obiwan">
-          <img class= "button_image"
+          <img class= "button_image" id="obi_image"
           src="images/obiwan.jpg" alt= "Obi wan">
         </button>
         <button  class= "button_container" id="quigon">
-          <img class= "button_image"
+          <img class= "button_image" id="quigon_image"
           src="images/quigon.jpg" alt= "QuiGon">
         </button>
         <button  class= "button_container" id="threepio">
-          <img class= "button_image"
+          <img class= "button_image" id="threepio_image"
           src="images/threepio.jpg" alt= "C3PO">
         </button>
         <button  class= "button_container" id="yoda">
-          <img class= "button_image"
+          <img class= "button_image" id="yoda_image"
           src="images/yoda.jpg" alt= "Yoda">
         </button>
         <button  class= "button_container" id="windu">
-          <img class= "button_image"
+          <img class= "button_image" id="windu_image"
           src="images/windu.jpg" alt= "Windu">
         </button>
         <button  class= "button_container" id="luke">
-          <img class= "button_image"
+          <img class= "button_image" id="luke_image"
           src="images/luke.jpg" alt= "Luke">
         </button>  
       </div>
       <div class= "badguys">
         <button  class= "button_container" id="jabba">
-        <img class= "button_image"
+        <img class= "button_image" id="jabba_image"
         src="images/jabba.jpg" alt= "Jabba">
         </button>
         <button  class= "button_container" id="vader">
-          <img class= "button_image"
+          <img class= "button_image" id="vader_image"
           src="images/vader.jpg" alt= "Vader">
         </button>
         <button  class= "button_container" id="sidious">
-          <img class= "button_image"
+          <img class= "button_image" id="sidious_image"
           src="images/sidious.jpg" alt= "Sidious">
         </button>
         <button  class= "button_container" id="grevious">
-          <img class= "button_image"
+          <img class= "button_image" id="grevious_image"
           src="images/grevious.jpg" alt= "Grevious">
         </button>
         <button  class= "button_container" id="dooku">
-          <img class= "button_image"
+          <img class= "button_image" id="dooku_image"
           src="images/dooku.jpg" alt= "Dooku">
         </button>
         <button  class= "button_container" id="maul">
-          <img class= "button_image"
+          <img class= "button_image" id="maul_image"
           src="images/maul.jpg" alt= "Maul">
         </button>
       </div>
     </div>
+      <div class="divider"> </div>
+      <div class="helpbutton_container">
+        <p><button class="help_button" id="help">Help</button></p>
+      </div>
+     <p class="disclaimer">Star Wars and all characters displayed here
+       are owned by the Walt Disney Coorporation
+     </p>
   </div>
+  
     <script src="main.js"></script>
 </body>
 </html>

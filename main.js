@@ -11,6 +11,7 @@ const sidiousBtn = document.getElementById('sidious');
 const greviousBtn = document.getElementById('grevious');
 const dookuBtn = document.getElementById('dooku');
 const maulBtn = document.getElementById('maul');
+const helpBtn= document.getElementById('help');
 
 // Sound File variables 
 const obiSound = new Audio('sounds/obiwanSound.mp3');
@@ -26,15 +27,122 @@ const greviousSound = new Audio('sounds/greviousSound.mp3');
 const dookuSound = new Audio('sounds/dookuSound.mp3');
 const maulSound = new Audio('sounds/maulSound.mp3');
 
+// image swap variables
+const obi_image= document.getElementById('obi_image');
+const quigon_image= document.getElementById('quigon_image');
+const threepio_image= document.getElementById('threepio_image');
+const yoda_image= document.getElementById('yoda_image');
+const windu_image= document.getElementById('windu_image');
+const luke_image= document.getElementById('luke_image');
+const jabba_image= document.getElementById('jabba_image');
+const vader_image= document.getElementById('vader_image');
+const sidious_image= document.getElementById('sidious_image');
+const grevious_image= document.getElementById('grevious_image');
+const dooku_image= document.getElementById('dooku_image');
+const maul_image= document.getElementById('maul_image');
+
+
 // Popup box variables
 const popupContainer=document.getElementById('popup_container');
+const popupContainerHelp=document.getElementById('popup_container_help')
 const xbutton = document.getElementById('xbutton');
+const xbuttontwo= document.getElementById('xbuttontwo');
 const image = document.getElementById('containerimage');
 const text = document.getElementById('containerText');
 const title = document.getElementById('container_title');
 
 
+// hover effect event listeners
+obiwanBtn.addEventListener('mouseover', function(){
+    obi_image.src="images/obiwanHover.jpg";   
+});
+obiwanBtn.addEventListener('mouseout', function(){
+    obi_image.src="images/obiwan.jpg";   
+});
+
+quigonBtn.addEventListener('mouseover', function(){
+    quigon_image.src="images/quigonHover.jpg";   
+});
+quigonBtn.addEventListener('mouseout', function(){
+    quigon_image.src="images/quigon.jpg";   
+});
+
+threepioBtn.addEventListener('mouseover', function(){
+    threepio_image.src="images/threepioHover.jpg";   
+});
+threepioBtn.addEventListener('mouseout', function(){
+    threepio_image.src="images/threepio.jpg";   
+});
+
+yodaBtn.addEventListener('mouseover', function(){
+    yoda_image.src="images/yodaHover.jpg";   
+});
+yodaBtn.addEventListener('mouseout', function(){
+    yoda_image.src="images/yoda.jpg";   
+});
+
+winduBtn.addEventListener('mouseover', function(){
+    windu_image.src="images/winduHover.jpg";   
+});
+winduBtn.addEventListener('mouseout', function(){
+    windu_image.src="images/windu.jpg";   
+});
+
+lukeBtn.addEventListener('mouseover', function(){
+    luke_image.src="images/lukeHover.jpg";   
+});
+lukeBtn.addEventListener('mouseout', function(){
+    luke_image.src="images/luke.jpg";   
+});
+
+jabbaBtn.addEventListener('mouseover', function(){
+    jabba_image.src="images/jabbaHover.jpg";   
+});
+jabbaBtn.addEventListener('mouseout', function(){
+    jabba_image.src="images/jabba.jpg";   
+});
+
+vaderBtn.addEventListener('mouseover', function(){
+    vader_image.src="images/vaderHover.jpg";   
+});
+vaderBtn.addEventListener('mouseout', function(){
+    vader_image.src="images/vader.jpg";   
+});
+
+sidiousBtn.addEventListener('mouseover', function(){
+    sidious_image.src="images/sidiousHover.jpg";   
+});
+sidiousBtn.addEventListener('mouseout', function(){
+    sidious_image.src="images/sidious.jpg";   
+});
+
+greviousBtn.addEventListener('mouseover', function(){
+    grevious_image.src="images/greviousHover.jpg";   
+});
+greviousBtn.addEventListener('mouseout', function(){
+    grevious_image.src="images/grevious.jpg";   
+});
+
+dookuBtn.addEventListener('mouseover', function(){
+    dooku_image.src="images/dookuHover.jpg";   
+});
+dookuBtn.addEventListener('mouseout', function(){
+    dooku_image.src="images/dooku.jpg";   
+});
+
+maulBtn.addEventListener('mouseover', function(){
+    maul_image.src="images/maulHover.jpg";   
+});
+maulBtn.addEventListener('mouseout', function(){
+    maul_image.src="images/maul.jpg";   
+});
+
+
 // event listeners that makes pop-up and sounds appear
+helpBtn.addEventListener('click',function(){
+    console.log('test');
+    popup_container_help.classList.add('popup-visible');
+});
 
 obiwanBtn.addEventListener('click', function(){
     console.log('obi was clicked');
@@ -163,8 +271,10 @@ xbutton.addEventListener('click', function(){
     dookuSound.pause();
     maulSound.pause();
 
-})
-
+});
+xbuttontwo.addEventListener('click', function(){
+    popup_container_help.classList.remove('popup-visible');
+});
 
 // Calander date section
 const userSubmitBtn = document.getElementById('userSubmit');
@@ -292,7 +402,6 @@ userSubmitBtn.addEventListener('click', function() {
     title.textContent= "Luke Skywalker";
     }
 
-    console.log(AstroSign);
 });
 
 
