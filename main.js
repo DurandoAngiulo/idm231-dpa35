@@ -1,5 +1,3 @@
-let viewportHieght = window.innerHeight;
-
 
 // Button variables
 const obiwanBtn = document.getElementById('obiwan');
@@ -145,6 +143,7 @@ maulBtn.addEventListener('mouseout', function(){
 helpBtn.addEventListener('click',function(){
     console.log('test');
     popup_container_help.classList.add('popup-visible');
+    window.scrollTo(0,0);
 });
 
 obiwanBtn.addEventListener('click', function(){
@@ -155,6 +154,7 @@ obiwanBtn.addEventListener('click', function(){
     obiSound.play();
     image.src="images/obiwan.jpg";
     title.textContent= "Obi Wan Kenobi";
+    window.scrollTo(0,0);
 });
 quigonBtn.addEventListener('click', function(){
     console.log('qui was clicked');
@@ -164,6 +164,7 @@ quigonBtn.addEventListener('click', function(){
     quigonSound.play();
     image.src="images/quigon.jpg";
     title.textContent= "Qui-Gon Jin";
+    window.scrollTo(0,0);
 });
 threepioBtn.addEventListener('click', function(){
     console.log('threepio was clicked');
@@ -173,6 +174,7 @@ threepioBtn.addEventListener('click', function(){
     threepioSound.play();
     image.src="images/threepio.jpg";
     title.textContent= "C3PO";
+    window.scrollTo(0,0);
 });
 yodaBtn.addEventListener('click', function(){
     console.log('yoda was clicked');
@@ -182,6 +184,7 @@ yodaBtn.addEventListener('click', function(){
     yodaSound.play();
     image.src="images/yoda.jpg";
     title.textContent= "Yoda";
+    window.scrollTo(0,0);
 });
 winduBtn.addEventListener('click', function(){
     console.log('windu was clicked');
@@ -191,6 +194,7 @@ winduBtn.addEventListener('click', function(){
     winduSound.play();
     image.src="images/windu.jpg";
     title.textContent= "Mace Windu";
+    window.scrollTo(0,0);
 });
 lukeBtn.addEventListener('click', function(){
     console.log('luke was clicked');
@@ -200,6 +204,7 @@ lukeBtn.addEventListener('click', function(){
     lukeSound.play();
     image.src="images/luke.jpg";
     title.textContent= "Luke Skywalker";
+    window.scrollTo(0,0);
 });
 jabbaBtn.addEventListener('click', function(){
     console.log(' jabba was clicked');
@@ -209,6 +214,7 @@ jabbaBtn.addEventListener('click', function(){
     jabbaSound.play();
     image.src="images/jabba.jpg";
     title.textContent= "Jabba The Hutt";
+    window.scrollTo(0,0);
 });
 vaderBtn.addEventListener('click', function(){
     console.log('vader was clicked');
@@ -218,6 +224,7 @@ vaderBtn.addEventListener('click', function(){
     vaderSound.play();
     image.src="images/vader.jpg";
     title.textContent= "Darth Vader";
+    window.scrollTo(0,0);
 });
 sidiousBtn.addEventListener('click', function(){
     console.log('sidious was clicked');
@@ -227,6 +234,7 @@ sidiousBtn.addEventListener('click', function(){
     sidiousSound.play();
     image.src="images/sidious.jpg";
     title.textContent= "Darth Sidious";
+    window.scrollTo(0,0);
 });
 greviousBtn.addEventListener('click', function(){
     console.log('grevious was clicked');
@@ -236,6 +244,7 @@ greviousBtn.addEventListener('click', function(){
     greviousSound.play();
     image.src="images/grevious.jpg";
     title.textContent= "General Grevious";
+    window.scrollTo(0,0);
 });
 dookuBtn.addEventListener('click', function(){
     console.log('dooku was clicked');
@@ -245,6 +254,7 @@ dookuBtn.addEventListener('click', function(){
     dookuSound.play();
     image.src="images/dooku.jpg";
     title.textContent= "Count Dooku";
+    window.scrollTo(0,0);
 });
 maulBtn.addEventListener('click', function(){
     console.log('maul was clicked');
