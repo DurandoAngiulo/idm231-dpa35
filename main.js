@@ -1,3 +1,6 @@
+let viewportHieght = window.innerHeight;
+
+
 // Button variables
 const obiwanBtn = document.getElementById('obiwan');
 const quigonBtn = document.getElementById('quigon');
@@ -251,6 +254,7 @@ maulBtn.addEventListener('click', function(){
     maulSound.play();
     image.src="images/maul.jpg";
     title.textContent= "Darth Maul";
+    window.scrollTo(0,0);
 });
 
 
